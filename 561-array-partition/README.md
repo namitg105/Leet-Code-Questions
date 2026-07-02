@@ -28,3 +28,21 @@ So the maximum possible sum is 4.</pre>
 	<li><code>nums.length == 2 * n</code></li>
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+<br>
+HINTS<br>
+
+<br>
+Hint 1<br>
+Obviously, brute force won't help here. Think of something else, take some example like 1,2,3,4.<br>
+
+<br>
+Hint 2<br>
+How will you make pairs to get the result? There must be some pattern.<br>
+
+<br>
+Hint 3<br>
+Did you observe that- Minimum element gets add into the result in sacrifice of maximum element.<br>
+
+<br>
+Hint 4<br>
+Still won't able to find pairs? Sort the array and try to find the pattern.<br>
