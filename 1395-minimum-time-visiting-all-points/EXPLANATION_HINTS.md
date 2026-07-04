@@ -1,3 +1,9 @@
+Discussion 1-> was asked this problem during my interview with Facebook. The problem asks us to visit the points in the same order as they appear in the array. So I finished it in 5 min. Then I was asked the follow up question: what if we don't need to visit points in order? What if we can choose whatever point to visit? How should we find the minimum time to visit every point? My naive thinking is Dijkstra's algorithm or A* algorithm, but maybe Dijkstra's algorithm or A* algorithm won't work for such a follow up? I struggled to find a way to solve the follow up question but not successful. Any thoughts about it?<br>
+<br>Discussion 2->When solving this problem, it's essential to make the most of diagonal movement. For example, when moving from point [1,1] to [3,4], First calculate the differences in both x and y coordinates: dx = 3 - 1 = 2 and dy = 4 - 1 = 3. You can move diagonally for the minimum of these two values, which is 2 times in this case. After these diagonal moves, you have one remaining vertical move to reach [3,4], because the difference in y-coordinate is still 1 after accounting for the diagonal moves. The total time for each segment is the maximum of dx and dy, as this combines diagonal movement with any remaining horizontal or vertical movement needed.
+
+
+
+
 # Why the Answer is `max(dx, dy)` — Building the Intuition
 
 > Notes on [1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/)
